@@ -31,8 +31,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w3R-Hn-nTh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Photos" image="photo" catalog="system" id="QHH-9D-NDB"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eX3-dF-d3w">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="eX3-dF-d3w">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -76,8 +76,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gP6-IQ-bPh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="xsP-ea-nP8"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u6F-G3-tby">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="u6F-G3-tby">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
