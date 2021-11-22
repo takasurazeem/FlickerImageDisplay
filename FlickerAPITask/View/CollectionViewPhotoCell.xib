@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewPhotoCell" customModule="FlickerAPITask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="263" height="138"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="263" height="138"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TuQ-ea-ZVW">
+                        <rect key="frame" x="0.0" y="1" width="263" height="135.5"/>
+                        <color key="tintColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6c-hR-RZA">
+                        <rect key="frame" x="223" y="8" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="Lhj-qm-U2p"/>
+                            <constraint firstAttribute="height" constant="32" id="qNQ-6O-5Y8"/>
+                        </constraints>
+                        <color key="tintColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="star.circle" catalog="system"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vagelis Pikoulas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odQ-QO-NLP">
+                        <rect key="frame" x="8" y="115" width="91" height="15"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vilia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAB-qg-iB6">
+                        <rect key="frame" x="8" y="87" width="32.5" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="TuQ-ea-ZVW" secondAttribute="bottom" id="1L3-Qw-ZSn"/>
+                <constraint firstAttribute="trailing" secondItem="n6c-hR-RZA" secondAttribute="trailing" constant="8" id="Aqu-Xg-MYo"/>
+                <constraint firstItem="n6c-hR-RZA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="H9r-mM-c5b"/>
+                <constraint firstItem="TuQ-ea-ZVW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IDv-jN-3sE"/>
+                <constraint firstItem="mAB-qg-iB6" firstAttribute="leading" secondItem="odQ-QO-NLP" secondAttribute="leading" id="Mif-qd-aUj"/>
+                <constraint firstAttribute="bottom" secondItem="odQ-QO-NLP" secondAttribute="bottom" constant="8" id="Pdv-Pj-3NS"/>
+                <constraint firstItem="TuQ-ea-ZVW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pPM-OM-W0e"/>
+                <constraint firstItem="odQ-QO-NLP" firstAttribute="top" secondItem="mAB-qg-iB6" secondAttribute="bottom" constant="8" id="sWF-nv-eLI"/>
+                <constraint firstAttribute="trailing" secondItem="TuQ-ea-ZVW" secondAttribute="trailing" id="uze-iw-Xxo"/>
+                <constraint firstItem="odQ-QO-NLP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="xx7-hr-Lkt"/>
+            </constraints>
+            <size key="customSize" width="263" height="138"/>
+            <connections>
+                <outlet property="imageOwnerLabel" destination="odQ-QO-NLP" id="pc2-YJ-tjy"/>
+                <outlet property="imageTitleLabel" destination="mAB-qg-iB6" id="oLD-xc-6S9"/>
+                <outlet property="photoView" destination="TuQ-ea-ZVW" id="wHC-fv-UOA"/>
+            </connections>
+            <point key="canvasLocation" x="292.02898550724638" y="169.41964285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="photo.fill" catalog="system" width="128" height="93"/>
+        <image name="star.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
