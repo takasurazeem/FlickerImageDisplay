@@ -19,14 +19,14 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6C2-gW-Uj0">
-                        <rect key="frame" x="8" y="8" width="247" height="122"/>
+                        <rect key="frame" x="0.0" y="0.0" width="263" height="138"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TestImage" translatesAutoresizingMaskIntoConstraints="NO" id="TuQ-ea-ZVW">
-                                <rect key="frame" x="0.0" y="0.0" width="247" height="122"/>
+                                <rect key="frame" x="0.0" y="0.0" width="263" height="138"/>
                                 <color key="tintColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="SmA-v0-Haf">
-                                <rect key="frame" x="0.0" y="72" width="247" height="50"/>
+                                <rect key="frame" x="0.0" y="88" width="263" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vilia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAB-qg-iB6">
                                         <rect key="frame" x="8" y="8" width="34" height="20.5"/>
@@ -56,8 +56,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6c-hR-RZA">
-                                <rect key="frame" x="215" y="16" width="16" height="16"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6c-hR-RZA" userLabel="Add To Fav">
+                                <rect key="frame" x="231" y="16" width="16" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="16" id="Q5K-5l-7Qe"/>
                                     <constraint firstAttribute="height" constant="16" id="SFP-Cl-STh"/>
@@ -65,13 +65,31 @@
                                 <color key="tintColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="star.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="addToFavourites:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Noh-cF-Jbl"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auI-MA-bnL" userLabel="Remove From Fav">
+                                <rect key="frame" x="231" y="16" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="Ss2-2x-NDE"/>
+                                    <constraint firstAttribute="width" constant="16" id="ZSP-QO-JNo"/>
+                                </constraints>
+                                <color key="tintColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="removeFromFavourites:" destination="gTV-IL-0wX" eventType="touchUpInside" id="DOw-Aw-9vX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <constraints>
                             <constraint firstItem="n6c-hR-RZA" firstAttribute="top" secondItem="6C2-gW-Uj0" secondAttribute="top" constant="16" id="2ZZ-jO-C6G"/>
                             <constraint firstAttribute="bottom" secondItem="SmA-v0-Haf" secondAttribute="bottom" id="IN9-8m-5LH"/>
+                            <constraint firstItem="auI-MA-bnL" firstAttribute="trailing" secondItem="n6c-hR-RZA" secondAttribute="trailing" id="UDT-BG-eLn"/>
                             <constraint firstAttribute="bottom" secondItem="TuQ-ea-ZVW" secondAttribute="bottom" id="VMi-w6-VnX"/>
+                            <constraint firstItem="auI-MA-bnL" firstAttribute="top" secondItem="n6c-hR-RZA" secondAttribute="top" id="e5a-5y-MKs"/>
                             <constraint firstAttribute="trailing" secondItem="TuQ-ea-ZVW" secondAttribute="trailing" id="mid-DC-GDz"/>
                             <constraint firstAttribute="trailing" secondItem="n6c-hR-RZA" secondAttribute="trailing" constant="16" id="n6k-Nh-xGE"/>
                             <constraint firstAttribute="trailing" secondItem="SmA-v0-Haf" secondAttribute="trailing" id="pDB-61-2lc"/>
@@ -81,7 +99,7 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="10"/>
+                                <real key="value" value="0.0"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
@@ -89,17 +107,18 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="6C2-gW-Uj0" secondAttribute="bottom" constant="8" id="GGB-ix-E5l"/>
-                <constraint firstItem="6C2-gW-Uj0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="qFI-c2-1PZ"/>
-                <constraint firstItem="6C2-gW-Uj0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="x9e-1U-qxm"/>
-                <constraint firstAttribute="trailing" secondItem="6C2-gW-Uj0" secondAttribute="trailing" constant="8" id="xJy-eB-1oI"/>
+                <constraint firstAttribute="bottom" secondItem="6C2-gW-Uj0" secondAttribute="bottom" id="GGB-ix-E5l"/>
+                <constraint firstItem="6C2-gW-Uj0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qFI-c2-1PZ"/>
+                <constraint firstItem="6C2-gW-Uj0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="x9e-1U-qxm"/>
+                <constraint firstAttribute="trailing" secondItem="6C2-gW-Uj0" secondAttribute="trailing" id="xJy-eB-1oI"/>
             </constraints>
             <size key="customSize" width="263" height="138"/>
             <connections>
+                <outlet property="addToFavouriteButton" destination="n6c-hR-RZA" id="jtn-gv-9KF"/>
                 <outlet property="imageOwnerLabel" destination="odQ-QO-NLP" id="pc2-YJ-tjy"/>
                 <outlet property="imageTitleLabel" destination="mAB-qg-iB6" id="oLD-xc-6S9"/>
-                <outlet property="isFavouriteButton" destination="n6c-hR-RZA" id="gXL-fH-881"/>
                 <outlet property="photoView" destination="TuQ-ea-ZVW" id="wHC-fv-UOA"/>
+                <outlet property="removeFromFavouriteButton" destination="auI-MA-bnL" id="4R0-j8-Srn"/>
             </connections>
             <point key="canvasLocation" x="290.57971014492756" y="169.41964285714286"/>
         </collectionViewCell>
@@ -107,6 +126,7 @@
     <resources>
         <image name="TestImage" width="3872" height="2592"/>
         <image name="star.circle" catalog="system" width="128" height="121"/>
+        <image name="star.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -7,7 +7,7 @@
 
 import UIKit
 
-private let reuseIdentifier = "CollectionViewPhotoCell"
+let reuseIdentifier = "CollectionViewPhotoCell"
 
 class PhotosCollectionViewController: UICollectionViewController {
     
@@ -18,7 +18,7 @@ class PhotosCollectionViewController: UICollectionViewController {
     let fadeView: UIView = UIView()
     
     fileprivate func addFadeView() {
-        fadeView.frame = self.view.frame
+        fadeView.frame = .init(x: view.frame.origin.x, y: view.frame.origin.y, width: view.frame.width, height: view.frame.height - tabBarController!.tabBar.frame.height)
         fadeView.backgroundColor = .black
         fadeView.alpha = 0.4
         
@@ -50,6 +50,10 @@ class PhotosCollectionViewController: UICollectionViewController {
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        collectionView.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

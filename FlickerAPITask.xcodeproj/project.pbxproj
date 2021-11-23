@@ -23,6 +23,10 @@
 		7648A4B6274B635100AAC9A4 /* PhotoFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7648A4B5274B635100AAC9A4 /* PhotoFeed.swift */; };
 		7648A4B8274B63DA00AAC9A4 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7648A4B7274B63DA00AAC9A4 /* APIConstants.swift */; };
 		7648A4BE274B667200AAC9A4 /* PhotoFeedNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7648A4BD274B667200AAC9A4 /* PhotoFeedNetworkService.swift */; };
+		76AB7418274C9C3900F577E5 /* FavouritesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB7417274C9C3900F577E5 /* FavouritesCollectionViewController.swift */; };
+		76AB741A274CA29E00F577E5 /* Favourites+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB7419274CA29E00F577E5 /* Favourites+Extension.swift */; };
+		76AB741D274CA2DB00F577E5 /* Favourites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB741B274CA2DB00F577E5 /* Favourites+CoreDataClass.swift */; };
+		76AB741E274CA2DB00F577E5 /* Favourites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB741C274CA2DB00F577E5 /* Favourites+CoreDataProperties.swift */; };
 		CD3BCAF4274BB0BB0078D593 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3BCAF3274BB0BB0078D593 /* UIView+Extension.swift */; };
 		CD3BCAF6274BB0E40078D593 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3BCAF5274BB0E40078D593 /* UIImage+Extension.swift */; };
 		CD3BCAF9274C1B190078D593 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3BCAF8274C1B190078D593 /* Observable.swift */; };
@@ -68,6 +72,10 @@
 		7648A4B5274B635100AAC9A4 /* PhotoFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFeed.swift; sourceTree = "<group>"; };
 		7648A4B7274B63DA00AAC9A4 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		7648A4BD274B667200AAC9A4 /* PhotoFeedNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFeedNetworkService.swift; sourceTree = "<group>"; };
+		76AB7417274C9C3900F577E5 /* FavouritesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesCollectionViewController.swift; sourceTree = "<group>"; };
+		76AB7419274CA29E00F577E5 /* Favourites+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favourites+Extension.swift"; sourceTree = "<group>"; };
+		76AB741B274CA2DB00F577E5 /* Favourites+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favourites+CoreDataClass.swift"; sourceTree = "<group>"; };
+		76AB741C274CA2DB00F577E5 /* Favourites+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favourites+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CD3BCAF3274BB0BB0078D593 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		CD3BCAF5274BB0E40078D593 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		CD3BCAF8274C1B190078D593 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
@@ -123,6 +131,8 @@
 		7648A479274B5B7400AAC9A4 /* FlickerAPITask */ = {
 			isa = PBXGroup;
 			children = (
+				76AB741B274CA2DB00F577E5 /* Favourites+CoreDataClass.swift */,
+				76AB741C274CA2DB00F577E5 /* Favourites+CoreDataProperties.swift */,
 				CD3BCAF7274C1B050078D593 /* ViewModel */,
 				CD3BCAF2274BB0AF0078D593 /* Extensions */,
 				7648A4BA274B663500AAC9A4 /* Supporting Files */,
@@ -162,6 +172,7 @@
 				7648A4B1274B5DA000AAC9A4 /* CollectionViewPhotoCell.swift */,
 				7648A4B2274B5DA000AAC9A4 /* CollectionViewPhotoCell.xib */,
 				7648A4AD274B5C5400AAC9A4 /* TabBarViewController.swift */,
+				76AB7417274C9C3900F577E5 /* FavouritesCollectionViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +206,7 @@
 		CD3BCAF2274BB0AF0078D593 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				76AB7419274CA29E00F577E5 /* Favourites+Extension.swift */,
 				CD3BCAF3274BB0BB0078D593 /* UIView+Extension.swift */,
 				CD3BCAF5274BB0E40078D593 /* UIImage+Extension.swift */,
 			);
@@ -344,10 +356,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD3BCAF4274BB0BB0078D593 /* UIView+Extension.swift in Sources */,
+				76AB741E274CA2DB00F577E5 /* Favourites+CoreDataProperties.swift in Sources */,
 				7648A4AE274B5C5400AAC9A4 /* TabBarViewController.swift in Sources */,
 				CD3BCAFD274C801F0078D593 /* PhotoFeedCollectionViewCellViewModel.swift in Sources */,
+				76AB741D274CA2DB00F577E5 /* Favourites+CoreDataClass.swift in Sources */,
+				76AB7418274C9C3900F577E5 /* FavouritesCollectionViewController.swift in Sources */,
 				7648A4BE274B667200AAC9A4 /* PhotoFeedNetworkService.swift in Sources */,
 				7648A4B3274B5DA000AAC9A4 /* CollectionViewPhotoCell.swift in Sources */,
+				76AB741A274CA29E00F577E5 /* Favourites+Extension.swift in Sources */,
 				CD3BCAF9274C1B190078D593 /* Observable.swift in Sources */,
 				CD3BCAFB274C7EF50078D593 /* PhotoFeedViewModel.swift in Sources */,
 				7648A485274B5B7400AAC9A4 /* FlickerAPITask.xcdatamodeld in Sources */,
