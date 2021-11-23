@@ -25,6 +25,9 @@
 		7648A4BE274B667200AAC9A4 /* PhotoFeedNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7648A4BD274B667200AAC9A4 /* PhotoFeedNetworkService.swift */; };
 		CD3BCAF4274BB0BB0078D593 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3BCAF3274BB0BB0078D593 /* UIView+Extension.swift */; };
 		CD3BCAF6274BB0E40078D593 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3BCAF5274BB0E40078D593 /* UIImage+Extension.swift */; };
+		CD3BCAF9274C1B190078D593 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3BCAF8274C1B190078D593 /* Observable.swift */; };
+		CD3BCAFB274C7EF50078D593 /* PhotoFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3BCAFA274C7EF50078D593 /* PhotoFeedViewModel.swift */; };
+		CD3BCAFD274C801F0078D593 /* PhotoFeedCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3BCAFC274C801F0078D593 /* PhotoFeedCollectionViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		7648A4BD274B667200AAC9A4 /* PhotoFeedNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFeedNetworkService.swift; sourceTree = "<group>"; };
 		CD3BCAF3274BB0BB0078D593 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		CD3BCAF5274BB0E40078D593 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		CD3BCAF8274C1B190078D593 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		CD3BCAFA274C7EF50078D593 /* PhotoFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFeedViewModel.swift; sourceTree = "<group>"; };
+		CD3BCAFC274C801F0078D593 /* PhotoFeedCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFeedCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 		7648A479274B5B7400AAC9A4 /* FlickerAPITask */ = {
 			isa = PBXGroup;
 			children = (
+				CD3BCAF7274C1B050078D593 /* ViewModel */,
 				CD3BCAF2274BB0AF0078D593 /* Extensions */,
 				7648A4BA274B663500AAC9A4 /* Supporting Files */,
 				7648A4B9274B662900AAC9A4 /* View */,
@@ -192,6 +199,16 @@
 				CD3BCAF5274BB0E40078D593 /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD3BCAF7274C1B050078D593 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD3BCAF8274C1B190078D593 /* Observable.swift */,
+				CD3BCAFA274C7EF50078D593 /* PhotoFeedViewModel.swift */,
+				CD3BCAFC274C801F0078D593 /* PhotoFeedCollectionViewCellViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,8 +345,11 @@
 			files = (
 				CD3BCAF4274BB0BB0078D593 /* UIView+Extension.swift in Sources */,
 				7648A4AE274B5C5400AAC9A4 /* TabBarViewController.swift in Sources */,
+				CD3BCAFD274C801F0078D593 /* PhotoFeedCollectionViewCellViewModel.swift in Sources */,
 				7648A4BE274B667200AAC9A4 /* PhotoFeedNetworkService.swift in Sources */,
 				7648A4B3274B5DA000AAC9A4 /* CollectionViewPhotoCell.swift in Sources */,
+				CD3BCAF9274C1B190078D593 /* Observable.swift in Sources */,
+				CD3BCAFB274C7EF50078D593 /* PhotoFeedViewModel.swift in Sources */,
 				7648A485274B5B7400AAC9A4 /* FlickerAPITask.xcdatamodeld in Sources */,
 				7648A47B274B5B7400AAC9A4 /* AppDelegate.swift in Sources */,
 				7648A4B8274B63DA00AAC9A4 /* APIConstants.swift in Sources */,

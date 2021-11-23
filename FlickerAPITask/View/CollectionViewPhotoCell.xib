@@ -98,6 +98,7 @@
             <connections>
                 <outlet property="imageOwnerLabel" destination="odQ-QO-NLP" id="pc2-YJ-tjy"/>
                 <outlet property="imageTitleLabel" destination="mAB-qg-iB6" id="oLD-xc-6S9"/>
+                <outlet property="isFavouriteButton" destination="n6c-hR-RZA" id="gXL-fH-881"/>
                 <outlet property="photoView" destination="TuQ-ea-ZVW" id="wHC-fv-UOA"/>
             </connections>
             <point key="canvasLocation" x="290.57971014492756" y="169.41964285714286"/>

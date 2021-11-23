@@ -10,7 +10,10 @@ import UIKit
 extension UIImageView {
     /// Loads image from web asynchronosly and caches it, in case you have to load url
     /// again, it will be loaded from cache if available
-    func load(_ url: URL, placeholder: UIImage? = UIImage(systemName: "photo.fill"), cache: URLCache? = nil) {
+    func load(_ url: URL?, placeholder: UIImage? = UIImage(systemName: "photo.fill"), cache: URLCache? = nil) {
+        guard let url = url else {
+            return
+        }
         let cache = cache ?? URLCache.shared
         let request = URLRequest(url: url)
         if let data = cache.cachedResponse(for: request)?.data, let image = UIImage(data: data) {

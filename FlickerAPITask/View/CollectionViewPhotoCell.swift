@@ -12,21 +12,22 @@ class CollectionViewPhotoCell: UICollectionViewCell {
     @IBOutlet weak var photoView: UIImageView!
     @IBOutlet weak var imageTitleLabel: UILabel!
     @IBOutlet weak var imageOwnerLabel: UILabel!
+    @IBOutlet weak var isFavouriteButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    func load(photo: Photo?) {
-        guard let photo = photo else {
+    func load(photo: PhotoFeedCollectionViewCellViewModel?) {
+        guard let data = photo else {
             return
         }
-        if let urlString = photo.imageURL,
-           let url = URL(string: urlString) {
+        if let url = data.imageURL {
             photoView.load(url)
         }
-        imageTitleLabel.text = photo.title
-        imageOwnerLabel.text = photo.ownerName
+        imageTitleLabel.text = data.imageTitle
+        imageOwnerLabel.text = data.imageOwnerLabel
+        isFavouriteButton.setImage(data.isFavouriteButtonImage, for: .normal)
     }
     
 }
